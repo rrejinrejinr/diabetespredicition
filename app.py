@@ -1,20 +1,4 @@
 import streamlit as st
-import joblib
-import numpy as np
-
-model=joblib.load("diabetesprediction")
-st.title("Diabetes Prediction System")
-=st.number_input("Enter the work Experience",min_value=0,max_value=50,step=1,format="%d")
-jobrate=st.number_input("Enter the job Rate")
-
-if st.button("Predict"):
-  result=model.predict([[years,jobrate]])
-  st.write("Predict the Annual Salary",result)
-
-
-
-
-import streamlit as st
 import numpy as np
 
 
